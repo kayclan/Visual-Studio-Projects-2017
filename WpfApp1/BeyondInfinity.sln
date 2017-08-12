@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeyondInfinity", "BeyondInf
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FinalProject", "..\..\..\..\Dropbox\Lannen Home Documents\Visual Studio Projects\FinalProject\FinalProject\FinalProject\FinalProject.vcxproj", "{6D893E66-9013-4A1A-AA13-BEB19535286E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewerCh7", "ImageViewerCh7\ImageViewerCh7.csproj", "{50F9672C-5D8F-4F17-8390-1CAA3325F04D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,18 @@ Global
 		{6D893E66-9013-4A1A-AA13-BEB19535286E}.Release|x64.Build.0 = Release|x64
 		{6D893E66-9013-4A1A-AA13-BEB19535286E}.Release|x86.ActiveCfg = Release|Win32
 		{6D893E66-9013-4A1A-AA13-BEB19535286E}.Release|x86.Build.0 = Release|Win32
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Debug|x64.Build.0 = Debug|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Debug|x86.Build.0 = Debug|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Release|x64.ActiveCfg = Release|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Release|x64.Build.0 = Release|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Release|x86.ActiveCfg = Release|Any CPU
+		{50F9672C-5D8F-4F17-8390-1CAA3325F04D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
