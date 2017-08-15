@@ -54,8 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Battery.cs" />
+    <Compile Include="Model\Circuit.cs" />
+    <Compile Include="Model\OneBatteryOneResistorCircuit.cs" />
     <Compile Include="Problem.cs" />
-    <Compile Include="Resistor.cs" />
+    <Compile Include="Model\Resistor.cs" />
     <Page Include="BeyondInfinityMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,10 +99,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="OneResistorOneBattery.PNG" />
+    <Resource Include="Images\OneResistorOneBattery.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

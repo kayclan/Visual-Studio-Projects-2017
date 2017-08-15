@@ -1,22 +1,35 @@
-﻿using System;
+﻿using ImageViewerCh7.Commands;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace ImageViewerCh7
 {
     class ImageData : INotifyPropertyChanged
     {
-        public String ImagePath { get; private set; }
+        string _imagePath;
+        double _zoom = 1.0;
+        ICommand _openImageFileCommand, _zoomCommand;
 
-        public ImageData(string path)
+        public ImageData()
         {
-            ImagePath = path;
+            _openImageFileCommand = new OpenImageFileCommand(this);
+            _zoomCommand = new ZoomCommand(this);
         }
 
-        double _zoom = 1.0;
+        public String ImagePath
+        {
+            get { return _imagePath; }
+            set
+            {
+                _imagePath = value;
+                OnPropertyChanged("ImagePath");
+            }
+        }
 
         public double Zoom
         {
@@ -26,6 +39,16 @@ namespace ImageViewerCh7
                 _zoom = value;
                 OnPropertyChanged("Zoom");
             }
+        }
+
+        public ICommand OpenImageFileCommand
+        {
+            get { return _openImageFileCommand; }
+        }
+
+        public ICommand ZoomCommand
+        {
+            get { return _zoomCommand;  }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

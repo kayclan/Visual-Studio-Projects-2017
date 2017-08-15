@@ -12,10 +12,10 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <ToolBar FontSize="14">
-            <Button Content="Open..." Command="Open" Margin="6" />
-            <Button Content="Zoom In" Command="IncreaseZoom" Margin="6"/>
-            <Button Content="Zoom Out" Command="DecreaseZoom" Margin="6"/>
-            <Button Content="Normal" Command="local:Commands.ZoomNormalCommand" Margin="6"/>
+            <Button Content="Open..." Command="{Binding OpenImageFileCommand}" Margin="6" />
+            <Button Content="Zoom In" Command="{Binding ZoomCommand}" CommandParameter="ZoomIn" Margin="6"/>
+            <Button Content="Zoom Out" Command="{Binding ZoomCommand}" CommandParameter="ZoomOut" Margin="6"/>
+            <Button Content="Normal" Command="{Binding ZoomCommand}" CommandParameter="ZoomNormal" Margin="6"/>
         </ToolBar>
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <Image Source="{Binding ImagePath}" Stretch="None">
@@ -25,10 +25,4 @@
             </Image>
         </ScrollViewer>
     </Grid>
-    <Window.CommandBindings>
-        <CommandBinding Command="Open" Executed="OnOpen"/>
-        <CommandBinding Command="IncreaseZoom" Executed="OnZoomIn" CanExecute="OnIsImageExist"/>
-        <CommandBinding Command="DecreaseZoom" Executed="OnZoomOut" CanExecute="OnIsImageExist"/>
-        <CommandBinding Command="local:Commands.ZoomNormalCommand" Executed="OnZoomNormal" CanExecute="OnIsImageExist" />
-    </Window.CommandBindings>
 </Window>

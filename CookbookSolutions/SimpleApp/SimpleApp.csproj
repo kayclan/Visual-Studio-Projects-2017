@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50F9672C-5D8F-4F17-8390-1CAA3325F04D}</ProjectGuid>
+    <ProjectGuid>{8DC27809-5C79-421B-8E61-0EA790EF9EDC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ImageViewerCh7</RootNamespace>
-    <AssemblyName>ImageViewerCh7</AssemblyName>
+    <RootNamespace>SimpleApp</RootNamespace>
+    <AssemblyName>SimpleApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -62,9 +62,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Commands\OpenImageFileCommand.cs" />
-    <Compile Include="Commands\ZoomCommand.cs" />
-    <Compile Include="ImageData.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
